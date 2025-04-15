@@ -9,6 +9,7 @@ public class SpawnManager : MonoBehaviour
     public GameObject enemyPrefab;
     private float spawnRange = 20;
     private float spawnRangeX = 20;
+    private float spawnRangeY = 20;
     private float spawnPosZ = 20;
     private float startDelay = 10;
     private float spawnInterval = 10f;
@@ -25,7 +26,7 @@ public class SpawnManager : MonoBehaviour
     void Update()
     {
         
-        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
+        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), Random.Range(-spawnRangeY, spawnRangeY), spawnPosZ);
         int index = Random.Range(0, randomPrefab.Length);
         Instantiate(randomPrefab[index], spawnPos, randomPrefab[index].transform.rotation);
     }
