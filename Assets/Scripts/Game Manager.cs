@@ -24,11 +24,11 @@ public class GameManager : MonoBehaviour
     {
         while (true)
         {
-            UpdateScore(10);
+            
         }
     }
 
-    private void UpdateScore(int scoreToAdd)
+    public void UpdateScore(int scoreToAdd)
     {
         score += scoreToAdd;
         scoreText.text = "Score: " + score;
