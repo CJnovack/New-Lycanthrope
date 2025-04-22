@@ -11,8 +11,8 @@ public class SpawnManager : MonoBehaviour
     private float spawnRangeX = 20;
     private float spawnRangeY = 20;
     private float spawnPosZ = 20;
-    private float startDelay = 20;
-    private float spawnInterval = 10000f;
+    private float startDelay = 1;
+    private float spawnInterval = 5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,9 +26,7 @@ public class SpawnManager : MonoBehaviour
     void Update()
     {
         
-        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), Random.Range(-spawnRangeY, spawnRangeY), spawnPosZ);
-        int index = Random.Range(0, randomPrefab.Length);
-        Instantiate(randomPrefab[index], spawnPos, randomPrefab[index].transform.rotation);
+        
     }
     private Vector3 GenerateSpawnPosition()
     {
@@ -40,9 +38,9 @@ public class SpawnManager : MonoBehaviour
 
     void SpawnRandomPrefab()
     {
-        
+
+        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), Random.Range(-spawnRangeY, spawnRangeY), spawnPosZ);
         int index = Random.Range(0, randomPrefab.Length);
-        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
         Instantiate(randomPrefab[index], spawnPos, randomPrefab[index].transform.rotation);
     }
 }
