@@ -7,6 +7,7 @@ public class Hunter : MonoBehaviour
     public float speed = 5.0f;
     private Rigidbody2D hunterRb;
     private GameObject player;
+    public GameObject projectilePrefab;
     // Start is called before the first frame update
     void Start()
     {

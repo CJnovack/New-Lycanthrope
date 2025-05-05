@@ -9,6 +9,9 @@ public class HunterProjectile : MonoBehaviour
     public float bulletImpulse = 20.0f;
     private bool onRange = false;
     public Rigidbody2D projectile;
+    //public GameObject ShootPrefab;
+    public float FireRate;
+    private float FireDelay;
     // Start is called before the first frame update
     void Start()
     {

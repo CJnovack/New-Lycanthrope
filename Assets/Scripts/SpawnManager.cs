@@ -17,6 +17,7 @@ public class SpawnManager : MonoBehaviour
     void Start()
     {
         InvokeRepeating("SpawnRandomPrefab", startDelay, spawnInterval);
+        
         Instantiate(enemyPrefab, GenerateSpawnPosition(), enemyPrefab.transform.rotation);
         
         //Instantiate(randomPrefab, GenerateSpawnPosition(), randomPrefab.transform.rotation);
@@ -42,5 +43,9 @@ public class SpawnManager : MonoBehaviour
         Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), Random.Range(-spawnRangeY, spawnRangeY), spawnPosZ);
         int index = Random.Range(0, randomPrefab.Length);
         Instantiate(randomPrefab[index], spawnPos, randomPrefab[index].transform.rotation);
+    }
+    void SpawnEnemyPrefab(GameObject enemyPrefab)
+    {
+
     }
 }
