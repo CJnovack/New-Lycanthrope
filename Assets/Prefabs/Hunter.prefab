@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 452864899110106261}
   - component: {fileID: 9062249953268134906}
   - component: {fileID: 5623801824274979428}
+  - component: {fileID: -3428338100268634981}
   m_Layer: 0
   m_Name: Hunter
-  m_TagString: Hunter
+  m_TagString: Bad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -173,3 +174,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-3428338100268634981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5562249466020441917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 836c97a2028fd2c4080a932b40e2ddac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointValue: -20

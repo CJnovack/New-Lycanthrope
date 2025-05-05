@@ -13,8 +13,15 @@ public class Target : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(gameObject);
-        gameManager.UpdateScore(pointValue);
+        if (gameManager.isGameActive)
+        {
+            Destroy(gameObject);
+            gameManager.UpdateScore(pointValue);
+            if (!gameObject.CompareTag("Trap"))
+            {
+                // gameManager.GameOver();
+            }
+        }
     }
     // Update is called once per frame
     void Update()
