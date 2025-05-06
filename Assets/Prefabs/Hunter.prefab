@@ -101,11 +101,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6585b6a61b07f4458e2db0a273e4f3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.5
+  speed: 0
   projectilePrefab: {fileID: 1593876512525081202, guid: c4bbbcc6b0178d644a0dd811a5fa6449, type: 3}
-  arrow: {fileID: 1593876512525081202, guid: c4bbbcc6b0178d644a0dd811a5fa6449, type: 3}
-  arrowSpawn: {fileID: 34152898495794536}
-  fireTime: 5
+  firePoint: {fileID: 3064895221228765449}
+  fireRate: 2
 --- !u!50 &9062249953268134906
 Rigidbody2D:
   serializedVersion: 4
@@ -114,7 +113,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5562249466020441917}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
