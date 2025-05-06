@@ -8,6 +8,10 @@ public class Hunter : MonoBehaviour
     private Rigidbody2D hunterRb;
     private GameObject player;
     public GameObject projectilePrefab;
+    public GameObject arrow;
+    public Transform arrowSpawn;
+    public float fireTime = 5.0f;
+   // private float spawnTime = 5.0f;
     // Start is called before the first frame update
     void Start()
     {

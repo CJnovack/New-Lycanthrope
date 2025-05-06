@@ -47,24 +47,24 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
-     //   titleScreen.gameObject.SetActive(false);
-       // Time.timeScale = 1f;
-        //startButton.gameObject.SetActive(false);
+        titleScreen.gameObject.SetActive(false);
+        Time.timeScale = 1f;
+        startButton.gameObject.SetActive(false);
     }
 
     private void Awake()
     {
-        //Time.timeScale = 0f;
+        Time.timeScale = 0f;
     }
 
     private void OnEnable()
     {
-        //startButton.onClick.AddListener(StartGame);
+        startButton.onClick.AddListener(StartGame);
     }
 
     private void OnDisable()
     {
-        //startButton.onClick.RemoveListener(StartGame);
+        startButton.onClick.RemoveListener(StartGame);
     }
 
     IEnumerator SpawnTarget()

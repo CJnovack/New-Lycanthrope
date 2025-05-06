@@ -16,10 +16,10 @@ public class Target : MonoBehaviour
         if (gameManager.isGameActive)
         {
             Destroy(gameObject);
-            gameManager.UpdateScore(pointValue);
-            if (!gameObject.CompareTag("Trap"))
+            
+            if (collision.CompareTag("Player"))
             {
-                // gameManager.GameOver();
+                gameManager.UpdateScore(pointValue);
             }
         }
     }
