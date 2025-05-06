@@ -132,7 +132,6 @@ GameObject:
   m_Component:
   - component: {fileID: 30619502}
   - component: {fileID: 30619501}
-  - component: {fileID: 30619503}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -174,24 +173,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &30619503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 30619500}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 602afc43e3c16bb49b8b60ae74560225, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 30
-  Arrow: {fileID: 1593876512525081202, guid: c4bbbcc6b0178d644a0dd811a5fa6449, type: 3}
-  Hunter: {fileID: 34152898495794536, guid: 595d6681e4e644e44ae5670ad55da3c0, type: 3}
-  ArrowFire: 5
-  ArrowDelay: 5
-  player: {fileID: 8331246775523188174, guid: 2113be0b23fc8584ab62da68ca69105b, type: 3}
 --- !u!1 &199126673
 GameObject:
   m_ObjectHideFlags: 0

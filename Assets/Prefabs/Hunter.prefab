@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 9062249953268134906}
   - component: {fileID: 5623801824274979428}
   - component: {fileID: -3428338100268634981}
-  - component: {fileID: 8457817780360443955}
   m_Layer: 0
   m_Name: Hunter
   m_TagString: Bad
@@ -102,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6585b6a61b07f4458e2db0a273e4f3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 0.5
   projectilePrefab: {fileID: 1593876512525081202, guid: c4bbbcc6b0178d644a0dd811a5fa6449, type: 3}
   arrow: {fileID: 1593876512525081202, guid: c4bbbcc6b0178d644a0dd811a5fa6449, type: 3}
   arrowSpawn: {fileID: 34152898495794536}
@@ -192,24 +191,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointValue: -20
---- !u!114 &8457817780360443955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5562249466020441917}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 602afc43e3c16bb49b8b60ae74560225, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 30
-  Arrow: {fileID: 0}
-  Hunter: {fileID: 0}
-  ArrowFire: 0
-  ArrowDelay: 0
-  player: {fileID: 0}
 --- !u!1 &7372730679729526922
 GameObject:
   m_ObjectHideFlags: 0
