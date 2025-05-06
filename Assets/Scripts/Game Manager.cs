@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     private int score = 50;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI gameOverText;
+    public GameObject titleScreen;
+    public Button startButton;
     public Text Score;
     public bool isGameActive;
     public Button restartButton;
@@ -41,6 +43,28 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void StartGame()
+    {
+     //   titleScreen.gameObject.SetActive(false);
+       // Time.timeScale = 1f;
+        //startButton.gameObject.SetActive(false);
+    }
+
+    private void Awake()
+    {
+        //Time.timeScale = 0f;
+    }
+
+    private void OnEnable()
+    {
+        //startButton.onClick.AddListener(StartGame);
+    }
+
+    private void OnDisable()
+    {
+        //startButton.onClick.RemoveListener(StartGame);
     }
 
     IEnumerator SpawnTarget()

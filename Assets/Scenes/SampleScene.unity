@@ -154,6 +154,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 936407716}
   gameOverText: {fileID: 785940998}
+  titleScreen: {fileID: 516477797}
+  startButton: {fileID: 199126675}
   Score: {fileID: 0}
   isGameActive: 0
   restartButton: {fileID: 1645940236}
@@ -208,7 +210,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &199126674
 RectTransform:
   m_ObjectHideFlags: 0
@@ -474,7 +476,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &516477798
 RectTransform:
   m_ObjectHideFlags: 0
