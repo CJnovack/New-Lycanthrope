@@ -11,7 +11,7 @@ public class Hunter : MonoBehaviour
     public Transform firePoint;
     public float fireRate = 2.0f;
     private float fireCoolDown;
-   // private float spawnTime = 5.0f;
+    //private float spawnTime = 5.0f;
     // Start is called before the first frame update
     void Start()
     {

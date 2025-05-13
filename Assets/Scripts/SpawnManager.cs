@@ -46,6 +46,8 @@ public class SpawnManager : MonoBehaviour
     }
     void SpawnEnemyPrefab(GameObject enemyPrefab)
     {
-
+        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), Random.Range(-spawnRangeY, spawnRangeY), spawnPosZ);
+        int index = Random.Range(0, randomPrefab.Length);
+        Instantiate(randomPrefab[index], spawnPos, randomPrefab[index].transform.rotation);
     }
 }

@@ -30,5 +30,9 @@ public class DetectCollission : MonoBehaviour
         {
             Destroy(other.gameObject);
         }
+        if (other.gameObject.CompareTag("Arrow"))
+        {
+            Destroy(other.gameObject);
+        }
     }
 }
