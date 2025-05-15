@@ -104,7 +104,7 @@ MonoBehaviour:
   speed: 1
   projectilePrefab: {fileID: 1593876512525081202, guid: c4bbbcc6b0178d644a0dd811a5fa6449, type: 3}
   firePoint: {fileID: 3064895221228765449}
-  fireRate: 2
+  fireRate: 3
 --- !u!50 &9062249953268134906
 Rigidbody2D:
   serializedVersion: 4

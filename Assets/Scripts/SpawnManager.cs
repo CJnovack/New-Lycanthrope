@@ -12,7 +12,7 @@ public class SpawnManager : MonoBehaviour
     private float spawnRangeY = 20;
     private float spawnPosZ = 20;
     private float startDelay = 1;
-    private float spawnInterval = 1f;
+    private float spawnInterval = 2f;
     // Start is called before the first frame update
     void Start()
     {
