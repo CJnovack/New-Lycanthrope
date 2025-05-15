@@ -26,7 +26,7 @@ public class DetectCollission : MonoBehaviour
         {
             Destroy(other.gameObject);
         }
-        if (other.gameObject.CompareTag("Hunter"))
+        if (other.gameObject.CompareTag("Bad"))
         {
             Destroy(other.gameObject);
         }
